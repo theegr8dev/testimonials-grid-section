@@ -1,0 +1,277 @@
+:root {
+    --violet: hsl(263, 55%, 52%);
+    --dark-grayish-blue: hsl(217, 19%, 35%);
+    --blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+:root {
+    --barlow-semi-condensed: 'Barlow Semi Condensed', sans-serif;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********** Utilities *************/
+img {
+    border-radius: 100px;
+    width: 35px;
+    border: 2px solid var(--white)
+}
+
+.box-head {
+    display: flex;
+}
+
+.img-text {
+    padding-left: 20px;
+    color: var(--light-grayish-blue);
+    font-family: var(--barlow-semi-condensed);
+}
+
+.box {
+    padding: 1.5rem 1.5rem;
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: var(--barlow-semi-condensed);
+    color: var(--white);
+    font-size: 21px;
+    padding-top: 15px;
+}
+
+.img-text p {
+    opacity: 50%;
+    font-size: 13px;
+}
+
+.speech {
+    font-family: var(--barlow-semi-condensed);
+    color: var(--white);
+    opacity: 70%;
+    padding-top: 15px;
+    font-size: 13.6px;
+}
+
+/******************* Utilities ended ********************/
+
+body {
+    width: 1440px;
+}
+
+.container {
+    margin: 7rem 9rem;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/**************************** Box-1 *******************/
+.box-1 {
+    background-color: var(--violet);
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 23rem;
+    align-items: center;
+    max-width: 50%;
+    /* max-height: 500%; */
+    align-self: center
+}
+
+.box-1 h2 {
+    max-width: 95%;
+}
+
+.speech-1 {
+    max-width: 95%;
+}
+
+/**************************** Ending Box-1 *******************/
+
+
+/**************************** Box-2 *******************/
+
+.box-2 {
+    background-color: var(--dark-grayish-blue);
+    max-width: 22.3%;
+    transform: translate(20px, 0px);
+
+
+}
+
+.box-2 h2 {
+    max-width: 95%;
+}
+
+.speech-2 {
+    max-width: 95%;
+}
+
+/**************************** Ending Box-2 *******************/
+.boxes-2 {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.box-3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 22%;
+}
+
+.img-extra {
+    border: 3px solid var(--dark-grayish-blue);
+}
+
+.img-text-extra h5 {
+    color: var(--dark-grayish-blue);
+}
+
+.img-text-extra p {
+    color: var(--dark-grayish-blue);
+
+}
+
+.box-extra h2 {
+    color: var(--dark-grayish-blue);
+    max-width: 90%;
+}
+
+.speech-3 {
+    color: var(--dark-grayish-blue);
+    max-width: 100%;
+    padding-top: 25px;
+}
+
+
+/****************************  Box-4 *******************/
+
+.box-4 {
+    background-color: var(--blackish-blue);
+    max-width: 50%;
+    transform: translate(25px, 0px);
+
+}
+
+.box-4 h2 {
+    max-width: 100%;
+    font-size: 19.2px;
+}
+
+.speech-4 {
+    max-width: 100%
+}
+
+/**************************** Ending Box-4 *******************/
+
+
+.box-5 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 21%;
+    float: right;
+    margin: -35rem 2rem;
+
+}
+
+.speech-5 {
+    color: var(--dark-grayish-blue);
+    max-width: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (min-width : 320px) and (max-width : 640px) {
+    .box {
+        max-width: 100%;
+        margin: 15px 0px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .speech {
+        font-size: 20px;
+    }
+
+    .img-text {
+        font-size: 23px;
+    }
+
+    .img-text p {
+        font-size: 20px;
+
+    }
+
+    body {
+        width: 375px;
+    }
+
+    .container {
+        margin: 32px 10px;
+    }
+
+    .boxes {
+        display: inline;
+    }
+
+    .boxes-2 {
+        display: inline;
+        margin-top: 0rem;
+    }
+
+
+    .box-1 {
+        background-position-x: 13rem;
+    }
+
+    .box-2 h2 {
+        max-width: 100%;
+    }
+
+    .speech-1 {
+        max-width: 100%;
+
+    }
+
+    .box-2 {
+        transform: translate(0px, 0px);
+
+    }
+
+    .box-4 {
+        transform: translate(0px, 0px);
+    }
+
+    .box-5 {
+        float: none;
+        margin: 0rem 0rem;
+    }
+
+
+}
+
+@media only screen and (min-width : 411px) and (max-width : 415px) {
+    body {
+        width: 400px;
+    }
+}
